@@ -9,8 +9,14 @@ def batch_badge_creator(names):
     return badges
 
 def assign_rooms(names):
-    return None
-
+    rooms = []
+    for name in names:
+        rooms.append(f"Hello, {name}! You'll be assigned to room {names.index(str(name)) + 1}!")
+    return rooms
 
 def printer(names):
-    return None
+    for name in names:
+        print(f"Hello, my name is {name}.")
+
+    for name in names:
+        print(f"Hello, {name}! You'll be assigned to room {names.index(str(name)) + 1}!")
